@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alumni Esprit</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{url_for('static',filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{url_for('static',filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        
+        <h1 class="text-light"><img src="{{url_for('static',filename='img/logo.png')}}" rel = "shortcut icon"  alt="" width="70" height="150"class="img-fluid"><a href="#intro" class="scrollto"><span>Incognito</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="{{url_for('static',filename='img/logo.png')}}" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Services</a></li>
+          
+          <li><a href="/">Team</a></li>
+          <li class="drop-down"><a href="">Get Started</a>
+            <ul>
+            
+              <li class="drop-down"><a href="#">Students Space</a>
+                <ul>
+                  <li><a href="intern">Recommand me an internship</a></li>
+                  <li><a href="job">Recommand me a job</a></li>
+                  <li><a href="alumni">Match me with an Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="prof">Professors Space</a></li>
+              <li class="drop-down"><a href="#">Companies Space</a>
+                <ul>
+                  <li><a href="profile">Recommand me a professional profile</a></li>
+                  
+                </ul>
+              </li>
+              
+
+            </ul>
+          </li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <div class="wrapper">
+            <div class="container">
+                <article class="part card-details">
+                    <h1>
+                        Make new contacts !
+                    </h1>
+                    <form action=""{{ url_for('alumni')}}" method="POST">
+                        <div class="group card-number">
+                            <label for="first">What is your speciality ?</label>
+                            <div class="col-half">
+                                <div class="input-group">
+                                  <select name = sp style="width: 100%;">
+                                    <option value="SAE">SAE</option>
+                                    <option value="DS">DS</option>
+                                    <option value="BI">BI</option>
+                                    <option value="ARCTIC">ARCTIC</option>
+                                    <option value="EMC">EMC</option>
+                                    <option value="TWIN">TWIN</option>
+                                    <option value="SIM">SIM</option>
+                                    <option value="WIN">WIN</option>
+                                    <option value="INFINI">INFINI</option>
+                                    <option value="MC">MC</option>
+                                    <option value="NIDS">NIDS</option>
+                                    <option value="GC">GC</option>
+                                    <option value="EE">EE</option>
+                                    <option value="SELAM">SELAM</option>                  
+                                  </select>
+                                </div>
+                              </div>
+                            
+                        </div>
+                        <br>
+                        <div class="group card-name">
+                            <label for="name">Where would you like you match to live in ?</label>
+                            <div class="col-half">
+                                <div class="input-group">
+                                  <select style="width: 100%;">
+                                    <option value="Tunis, Tunisie">Tunis, Tunisie</option>
+                                    <option value="Île-de-France, France">Île-de-France, France</option>
+                                    <option value="Ariana, Tunisie">Ariana, Tunisie</option>
+                                    <option value="Québec, Canada">Québec, Canada</option>
+                                    <option value="Other_Fr">Other_Fr</option>
+                                    <option value="Berlin, Allemagne">Berlin, Allemagne</option>
+                                    <option value="France">France</option>
+                                    <option value="Thuringe, Allemagne">Thuringe, Allemagne</option>
+                                    <option value="Rhénanie du Nord-Westphalie, Allemagne">Rhénanie du Nord-Westphalie, Allemagne</option>
+                                    <option value="Bade-Wurtemberg, Allemagne">Bade-Wurtemberg, Allemagne</option>
+                                    <option value="Ben Arous, Tunisie">Ben Arous, Tunisie</option>
+                                    <option value="Nabeul, Tunisie">Nabeul, Tunisie</option>
+                                    <option value="Bavière, Allemagne">Bavière, Allemagne</option>
+                                    <option value="Other_Gr">Other_Gr</option>
+                                    <option value="Other_Tn">Other_Tn</option>
+                                    <option value="Le Sahel, Tunisie">Le Sahel, Tunisie</option>
+                                    <option value="Ontario, Canada">Ontario, Canada</option>
+                                    <option value="Other_Ca">Other_Ca</option>
+                                  </select>
+                                </div>
+                              </div>
+                        </div>
+                           
+                              <br>
+                        <div class="grup submit-group">
+                            <span class="arrow"></span>
+                            <input type="submit" class="submit" value="Let's Go">
+                        </div>
+                    </form>
+                    <h3> Recommandation : {{ recommandation_text }}</h3>
+                </article>
+                <div class="part bg"></div>
+            </div>
+        </div>
+      </div>
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="{{url_for('static',filename='img/match.png')}}" alt="" class="img-fluid">
+        </div>
+          
+        
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                  <div class="footer-info">
+                    <h3>Incognito</h3>
+                    <p>For students, looking for internships, online
+                      courses and certificates are essential for
+                      building a good profile, but could take a
+                      long time and eventually be exhausting for
+                      them.</p>
+                  </div>
+
+                  <div class="footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>For the first stage of our project we start with finding a deeper understanding of the
+                      subject that we will work on.
+                      First, we start by establishing the business objectives we have to set for our project.
+                      Next, we look at the data science objectives that we need to fulfill by the end of our
+                      project..</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Terms of service</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      ESPRIT <br>
+                      Fethi Zouhir, Cebalat Ben Ammar 2083<br>
+                      
+
+Ariana, Tunis <br>
+                      <strong>Phone:</strong> 5892889<br>
+                      <strong>Email:</strong> incognito@innovate.tn<br>
+                    </p>
+                  </div>
+
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="form">
+              
+              <h4>Send us a message</h4>
+              <p></p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>Incognito</strong>. 
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{url_for('static',filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/mobile-nav/mobile-nav.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/wow/wow.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{url_for('static',filename='contactform/contactform.js')}}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+</html>

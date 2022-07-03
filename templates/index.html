@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alumni Esprit</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{url_for('static',filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{url_for('static',filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        
+        <h1 class="text-light"><img src="{{url_for('static',filename='img/logo.png')}}" rel = "shortcut icon"  alt="" width="70" height="150"class="img-fluid"><a href="#intro" class="scrollto"><span>Incognito</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="{{url_for('static',filename='img/logo.png')}}" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          
+          <li><a href="#team">Team</a></li>
+          <li class="drop-down"><a href="">Gte Started</a>
+            <ul>
+            
+              <li class="drop-down"><a href="#">Students Space</a>
+                <ul>
+                  <li><a href="intern">Recommand me an internship</a></li>
+                  <li><a href="job">Recommand me a job</a></li>
+                  <li><a href="alumni">Match me with an Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="prof">Professors Space</a></li>
+              <li class="drop-down"><a href="#">Companies Space</a>
+                <ul>
+                  <li><a href="profile">Recommand me a professional profile</a></li>
+                  
+                </ul>
+              </li>
+              
+
+            </ul>
+          </li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2><br>Welcome To<br> <span>ESPRIT ALUMNI!</span></h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Find your giving opportunity</a>
+
+          </div>
+        </div>
+  
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="{{url_for('static',filename='img/intro-img.svg')}}" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="{{url_for('static',filename='img/about-img.jpg')}}" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <h3>In data we trust</h3>
+              <p>Data Science has been a growing
+                technology in the last decade, and its use
+                spread to cover different fields including
+                schooling.
+                Traditionally, students of every field struggle
+                the most in finding internships that go with
+                their career of interest. They start by
+                searching companies in their specialties, and
+                that for itself can consume a lot of time and
+                energy.</p>
+              <p>Nevertheless, students can’t always find
+                good online courses and certificates that can
+                boost their chances of getting suitable
+                opportunities. In addition, ESPRIT’s
+                pedagogical responsibles cannot coordinate
+                between the market needs and the number
+                of students in each field.
+                All these fastidious and long processes can
+                be very exhausting and wearing for the
+                students and ESPRIT's pedagogical
+                responsibles, and as a consequence, it
+                becomes prone to human errors.</p>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Increase matching specific internship
+                  opportunities for students by 20%</li>
+                <li><i class="ion-android-checkmark-circle"></i> Better management of resources and
+                  finances on different specialities for ESPRIT by 15%</li>
+                <li><i class="ion-android-checkmark-circle"></i> Decrease the number of unnecessary
+                  interviews.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- #about -->
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Services</h3>
+          <p>To reach the goals of our project, it is required to address the following problems</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">For students</a></h4>
+              <p class="description">We offer the possibility to students to have an idea about companies where they can have internships and first jobs matching opportunities with Alumni studetns via a smart recommandation system</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+                            <h4 class="title"><a href="">For ESPRIT’s pedagogical responsibles</a></h4>
+              <p class="description">Professors can have from now on a precise intel on market needs and informations about Alumni students careers through interactive POWER BI Dashboarding</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">For companies</a></h4>
+              <p class="description">Providing accurate matchs for professional profiles to satisfy the companies needs</p>
+            </div>
+          </div>
+         
+         
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Call To Action</h3>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+   
+    
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="owl-carousel testimonials-carousel wow fadeInUp">
+    
+              <div class="testimonial-item">
+                <img src="{{url_for('static',filename='img/testimonial-1.jpg')}}" class="testimonial-img" alt="">
+                <h3>MOhamed Baha Said</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  I did join Incognito to challenge my self more and more, as it is considered as big opportunity for me. Incognito is the best Forum since you can work hand in hand with other students to change things in Africa.</p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="{{url_for('static',filename='img/testimonial-2.jpg')}}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  I went on the mobility to programme to follow my studies and I have enjoyed the experience of researching, working and living in a diverse culture! One of the biggest challenges for me, was the fear of academic failure in a new school life abroad. However I would encourage everyone to face the challenge of a fear that is most keept in ones life, like I did. Thanks to Incognito I had the chance to get together with other persons and to work in synergy in order to help develop myself and our society!                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="{{url_for('static',filename='img/testimonial-3.jpg')}}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  I had the chance to participate in one of the Incognito Regional Workshops and was encouraged to do so in order to expand my network and find new opportunities. Furthermore, I have always enjoyed discovering new cultures. So have you ever benefited from a mobility programme or scholarship offered by the European Union? Don't hesitate to join Incognito.                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="{{url_for('static',filename='img/testimonial-4.jpg')}}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- #testimonials -->
+
+<!--==========================
+      Team Section
+    ============================-->
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Never change a winning team !</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-6.png')}}"  width="500" height="500" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Belhassen CHATER</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-5.png')}}"  width="500" height="500"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Kenza GHEMINI</h4>
+                  <span>Analytics</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-2.png')}}"  width="500" height="500" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Mokhtar BECHAIB</h4>
+                  <span>Developer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-1.png')}}"  width="500" height="500"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Chaima ASKRI</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-4.png')}}"  width="500" height="500"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Nader ABBASSI</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{{url_for('static',filename='img/team-3.png')}}"   width="500" height="500" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Eya GHRIBI</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="{{url_for('static',filename='img/clients/client-1.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-2.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-3.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-4.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-5.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-6.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-7.png')}}" alt="">
+          <img src="{{url_for('static',filename='img/clients/client-8.png')}}" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+
+   <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+          <p>Everything you need to know about Alumni Relations.</p>
+        </header>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">What are some of the benefits and resources I have as an alumni? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                As an alum, you have access to career services, discounted gym memberships, St. John's marriage preparation and more.              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">What events can I attend?<i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                Check out our alumni events calendar.              </p>
+            </div>
+          </li>
+
+      
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">How do I get a copy of my diploma? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                You can get a copy <link>here.</link>              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">How do I contact my classmate or other friends from Alumni Esprit ? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>
+                Please contact Alumni Relations at alumni@creighton.edu or by phone at 800.282.5867. Our staff will be able to reach out to your friends and pass along your contact information.              </p>
+            </div>
+          </li>
+
+         
+
+        </ul>
+
+      </div>
+    </section><!-- #faq -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                  <div class="footer-info">
+                    <h3>Incognito</h3>
+                    <p>For students, looking for internships, online
+                      courses and certificates are essential for
+                      building a good profile, but could take a
+                      long time and eventually be exhausting for
+                      them.</p>
+                  </div>
+
+                  <div class="footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>For the first stage of our project we start with finding a deeper understanding of the
+                      subject that we will work on.
+                      First, we start by establishing the business objectives we have to set for our project.
+                      Next, we look at the data science objectives that we need to fulfill by the end of our
+                      project..</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit"  value="Subscribe">
+                    </form>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Terms of service</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      ESPRIT <br>
+                      Fethi Zouhir, Cebalat Ben Ammar 2083<br>
+                      
+
+Ariana, Tunis <br>
+                      <strong>Phone:</strong> 5892889<br>
+                      <strong>Email:</strong> hello@incognito.com<br>
+                    </p>
+                  </div>
+
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="form">
+              
+              <h4>Send us a message</h4>
+              <p></p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>Incognito</strong>. 
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{url_for('static',filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/mobile-nav/mobile-nav.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/wow/wow.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{url_for('static',filename='contactform/contactform.js')}}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+</html>
